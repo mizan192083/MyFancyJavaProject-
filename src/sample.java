@@ -45,7 +45,24 @@ public Shape getShape(String type) throws Exception {
                 throw new Exception("Shape type : " + type + " cannot be instantiated");
         }
 }
-
+class ShapeFactory
+{
+ 
+	 public Shape getShape(String type) throws Exception
+	 {
+		 switch (type)
+		 {
+			 case "Circle":
+				 return new Circle();
+			 case "Square":
+				 return new Square();
+			 case "Rectangle":
+				 return new Rectangle();
+			 default:
+				 throw new Exception( "Shape type : "+type+" cannot be instantiated");
+		 }
+	 }
+}
 
 class Painter
 {
