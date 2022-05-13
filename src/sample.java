@@ -52,13 +52,13 @@ class Painter
     public static void main(String[] args) throws Exception
     {
 
-        ShapeFactory shape = new ShapeFactory();
-        Shape circle=shape.getShape("Circle");
+        ShapeFactory printerShape = new ShapeFactory();
+        printerShape circle=printerShape.getShape("Circle");
         circle.draw();
-        Shape Rectangle = shape.getShape("Rectangle");
+        Shape Rectangle = printerShape.getShape("Rectangle");
         square.draw();
 
-        Shape rombus = shape.getShape("Rombus");
+        Shape rombus = printerShape.getShape("Rombus");
         rombus.draw();
     }
 }
